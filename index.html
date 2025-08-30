@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SKN Tractor Rent Service</title>
+  <meta name="description" content="Modern, affordable tractor and farm implement rentals in Karur & nearby. Transparent pricing, Tamil/English support, 24×7 availability." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">🚜</div>
+      <div class="brand-text">
+        <div class="brand-small">SKN Brand</div>
+        <h1 class="brand-title">SKN Tractor Rent Service</h1>
+      </div>
+    </div>
+    <nav class="nav-desktop">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="btn-green" href="https://wa.me/919655519580?text=Hello%2C%20I%27m%20interested%20in%20renting%20your%20tractor%20services." target="_blank">WhatsApp</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <span class="pill">24×7 • Reliable • Farmer-first</span>
+        <h2>Modern, Affordable Tractor & Implements on Rent</h2>
+        <p class="lead">We help you finish more work in less time with well-maintained equipment and transparent pricing. Free travel within 15 km of Karur; beyond that, nominal distance charges apply.</p>
+        <div class="hero-ctas">
+          <a class="btn-green" href="https://wa.me/919655519580?text=Hello%2C%20I%27m%20interested%20in%20renting%20your%20tractor%20services." target="_blank">💬 WhatsApp Us</a>
+          <a class="btn-outline" href="tel:+919655519580">📞 Call Now</a>
+        </div>
+        <p class="muted">தமிழிலும் சேவை — Tamil support available.</p>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="card-grid">
+          <div class="card"><strong>🚜 Swaraj 735 FE</strong><div class="muted">35–40 HP • Fuel efficient</div></div>
+          <div class="card"><strong>💰 Transparent Pricing</strong><div class="muted">Half-hour & hourly rates</div></div>
+          <div class="card"><strong>⏰ 24×7 Availability</strong><div class="muted">Advance booking recommended</div></div>
+          <div class="card"><strong>📍 Karur & Nearby</strong><div class="muted">Free travel within 15 km</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section reveal">
+    <div class="container">
+      <h3>Equipment for Rent</h3>
+      <p class="muted">Choose the right implement for the job. All machines are maintained regularly for peak performance.</p>
+      <div class="grid-3">
+        <div class="feature-card"><h4>Swaraj 735 FE Tractor</h4><p>Reliable 35–40 HP tractor for all-round farm work.</p></div>
+        <div class="feature-card"><h4>Shri Manju Rotavator (36 blades)</h4><p>Soil preparation, mixing, and seedbed finishing.</p></div>
+        <div class="feature-card"><h4>Gomathi Mulcher</h4><p>Shreds crop residue; helps soil health and field clearing.</p></div>
+        <div class="feature-card"><h4>Manju Brand Trolley</h4><p>Strong trolley for produce, inputs, and materials.</p></div>
+        <div class="feature-card"><h4>Cage Wheel</h4><p>Improved traction in wet/muddy fields.</p></div>
+        <div class="feature-card"><h4>Plough (5/7/9)</h4><p>Primary tillage options for different field needs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section light reveal">
+    <div class="container">
+      <div class="section-head">
+        <h3>Simple, Transparent Pricing</h3>
+        <p class="muted">All prices in INR. Travel free within 15 km from Karur; beyond that, distance charges apply.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="pricing-table">
+          <thead><tr><th>Equipment</th><th>Per ½ Hour</th><th>Per Hour</th></tr></thead>
+          <tbody>
+            <tr><td>5-Plow</td><td>₹ 550</td><td>₹ 1100</td></tr>
+            <tr><td>7-Plow</td><td>₹ 600</td><td>₹ 1200</td></tr>
+            <tr><td>9-Plow</td><td>₹ 500</td><td>₹ 1000</td></tr>
+            <tr><td>Rotavator</td><td>₹ 600</td><td>₹ 1200</td></tr>
+            <tr><td>Mulcher</td><td>₹ 800</td><td>₹ 1600</td></tr>
+            <tr><td>Cage Wheel</td><td>₹ 600</td><td>₹ 1200</td></tr>
+            <tr><td>Trolley</td><td>Distance-based</td><td>Distance-based</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="estimate-grid">
+        <div class="estimate-card">
+          <h4>Quick Estimate</h4>
+
+          <label for="equipment">Equipment Type</label>
+<input id="equipment" type="text" placeholder="e.g. Rotavator, 5-Plow" list="equipments">
+
+<!-- optional datalist for suggestions -->
+<datalist id="equipments">
+  <option value="5-Plow ">
+  <option value="7-Plow ">
+    <option value="9-Plow ">
+    <option value="Rotavator">
+  <option value="Mulcher">
+  <option value="Cage Wheel">
+</datalist>
+
+
+          <label>Distance from Karur (km)</label>
+          <input id="distance" type="number" min="0" value="10">
+
+          <label>Hours Required</label>
+          <input id="hours" type="number" min="0" step="0.5" value="2">
+        </div>
+
+        <div class="estimate-result">
+          <p id="usage"></p>
+          <p id="travel"></p>
+          <p id="total" class="total"></p>
+          <p class="small">This is an estimate. Final price may vary by implement and field conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section reveal">
+    <div class="container">
+      <h3>See It Working</h3>
+      <p class="muted">Short clips of our machines in the field. Ask us for more demos on WhatsApp.</p>
+      <div class="grid-3">
+        <a class="video-card" href="https://youtu.be/UnIHwH60d-c?si=X55DDB7UQWgus_DQ" target="_blank">▶ Swaraj 735</a>
+        <a class="video-card" href="https://youtu.be/XU9totoYpCY?si=vxvuTDZa8dlcmiZB" target="_blank">▶ Rotator</a>
+        <a class="video-card" href="https://youtu.be/CDD4_isq48Y?si=n8f-aUCFNK1n0y_A" target="_blank">▶ Mulcher</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section light reveal">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Contact & Service Area</h3>
+        <p class="muted">9/7, South Cross, Veerarakkiyam PO, KR Puram TK, Karur DT, Tamil Nadu – 639114</p>
+        <p class="muted">Open 24×7 (Advance booking recommended)</p>
+        <div class="contact-phones">
+          <a href="tel:+919655519580">📞 K. Sellamuthu (Owner)</a>
+          <a href="tel:+918489558034">📞 Karthick S (Director)</a>
+          <a href="tel:+919787752591">📞 Narendran S (Director)</a>
+        </div>
+        <div class="contact-actions">
+          <a class="btn-blue" href="mailto:karthicksellamuthu22@gmail.com">✉ Email</a>
+          <a class="btn-green" href="https://wa.me/919655519580?text=Hello%2C%20I%27m%20interested%20in%20renting%20your%20tractor%20services." target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Order Now</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0cM_x02aNMbvFvAvaiPu5Aan3aVQItf_YSTfKqsNQ9zKEqw/viewform?usp=header" 
+           target="_blank" 
+           class="btn-green order-btn">Click to Order</a>
+      </div>
+    </div>
+
+    <div class="container map-wrap">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.093206476098!2d78.079!3d10.960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9e4d46c4b123%3A0xabc123example!2sKarur%20Specific%20Location!5e0!3m2!1sen!2sin!4v1693300000000" 
+     
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  </section>
+
+  <section class="cta reveal">
+    <div class="container cta-box">
+      <div>
+        <h3>Ready to book? We can start today.</h3>
+        <p class="muted">Message us on WhatsApp or call. Tamil/English support available.</p>
+      </div>
+      <div>
+        <a class="btn-green" href="https://wa.me/919655519580?text=Hello%2C%20I%27m%20interested%20in%20renting%20your%20tractor%20services." target="_blank">💬WhatsApp</a>
+        <a class="btn-outline" href="tel:+919655519580">📞 Call</a>
+        <a class="btn-blue" href="mailto:karthicksellamuthu22@gmail.com">✉Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> SKN Tractor Rent Service. All rights reserved.</div>
+    <div class="muted">Made with ❤️ for farmers in Karur & beyond.</div>
+    <div class="muted">Designed by 
+      <a href="tel:+919025440566" class="designer-link">Logasundar</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
